@@ -1,38 +1,638 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff !important;
+  font-family: "Sarabun", sans-serif;
+}
+/* Header Two Css Start From Here */
+.main {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999999999999;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+  -webkit-transition: all 0.7s;
+  -o-transition: 0.7s all;
+  transition: all 0.7s;
+}
+.main.scrolled {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  position: sticky;
+  color: #000 !important;
+  -webkit-box-shadow: 0 1px 4px #bababa;
+  box-shadow: 0 1px 4px #bababa;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.navbar-brand img {
+  max-width: 110px;
+}
+.nav-link {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Sarabun", sans-serif;
+}
+.nav-link:hover {
+  color: #0172d0;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #151515;
+  min-width: 6rem;
+  font-size: 14px;
+  border-radius: 0 !important;
+  width: 155px;
+  background-color: #fff;
+}
+.dropdown-item:hover {
+  color: #0172d0;
+}
+/* Home Css Start From Here */
+.home_bannner_text {
+  position: relative;
+  height: 90vh;
+  top: 30%;
+}
+.for_home_img {
+  position: relative;
+  top: 20%;
+}
+.for_home_img img {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.home_bannner_text h1 {
+  color: #151515;
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 1;
+}
+/* About Css Start From Here */
+.solution {
+  padding: 0 50px;
+}
+.solution h2 {
+  font-weight: 700;
+  padding: 18px 0 10px;
+  font-size: 22px;
+  color: #151515;
+  font-size: 45px;
+  cursor: pointer;
+}
+.solution h2 span {
+  color: #0172d0;
+}
+.solution h5 {
+  font-size: 22px;
+  font-weight: normal;
+}
+.solution p {
+  margin-top: 17px;
+  font-size: 15px;
+}
+.solution_btn {
+  margin-bottom: 30px;
+}
+.solution_btn button {
+  border: none;
+  color: #fff;
+  background-color: #0172d0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.solution_btn button:hover {
+  background-color: #151515;
+}
+.solution_img img {
+  max-width: 100%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.for_project_bg {
+  background-color: #f8f8f8;
+  text-align: center !important;
+  padding: 130px 0;
+}
+.for_project h2 {
+  font-weight: 800;
+  font-size: 33px;
+  padding-bottom: 40px;
+  color: #151515;
+}
+.for_project h2 span {
+  color: #0172d0;
+}
+.for_project_text h4 {
+  font-weight: 900;
+  font-size: 43px;
+  color: #1c47c1;
+}
+.for_project_text p {
+  color: #151515;
+  padding: 5px 0 0;
+  font-size: 16px;
+}
+.creative_team {
+  padding: 0 40px !important;
+}
+.creative_team img {
+  max-width: 100%;
+}
+
+/* Services Css Start From Here */
+.for_ser {
+  margin-top: 80px !important;
+}
+.ser_body h4 {
+  font-weight: 700;
+  padding: 18px 0 10px;
+  font-size: 24px;
+  color: #151515;
+  cursor: pointer;
+}
+.ser_body h4:hover {
+  color: #0172d0;
+}
+.ser_body p {
+  color: #151515;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Sarabun", sans-serif;
+}
+.ser {
+  padding: 0 90px !important;
+}
+.chooseone h3 {
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: -9px;
+  padding-bottom: 8px;
+}
+.chooseone h3 span {
+  color: #0172d0;
+}
+.chooseone_data {
+  margin-top: 40px;
+}
+.chooseone_data h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  margin-top: -9px;
+  padding-bottom: 8px;
+}
+.chooseone_data p {
+  padding-bottom: 22px;
+  color: #151515;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Sarabun", sans-serif;
+}
+.title {
+  padding-left: 33px;
+}
+.choosetwo_data {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.choosetwo_data h2 {
+  padding-top: 13px;
+  cursor: pointer;
+  font-weight: 800;
+  color: #0172d0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.choosetwo_data h2:hover {
+  color: #151515;
+}
+.for_choose_img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.for_choose_img img {
+  width: 100%;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.card:hover {
+  box-shadow: 4px 4px 4px 4px #bababa;
+}
+.card-head {
+  text-align: center;
+}
+.card-head h3 {
+  margin-top: 30px;
+  margin-bottom: 18px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.card-head h5 {
+  color: #0172d0;
+  font-size: 30px;
+  padding-top: 15px;
+}
+.card-body ul {
+  list-style: none;
+  text-align: center;
+}
+.card-body ul li {
+  padding: 15px 0;
+  font-size: 16px;
+  color: #151515;
+}
+.for_order_btn {
+  text-align: center;
+  padding: 20px 0;
+}
+.for_order_btn button {
+  border: none;
+  color: #fff;
+  background-color: #0172d0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.for_order_btn button:hover {
+  background-color: #151515;
+}
+.card-body ul li:first-child {
+  border-top: 1px solid #e1e1e1;
+}
+.card-body ul li {
+  border-bottom: 1px solid #e1e1e1;
+}
+/* Team Css Start From Here */
+.team_main {
+  padding: 95px 0;
+  text-align: center;
+}
+.team_main h1 {
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: -9px;
+  font-size: 36px;
+}
+.team_main p {
+  text-align: center;
+  font-size: 16px;
+  color: #151515;
+}
+.team_img {
+  min-width: 250px;
+  min-height: 250px;
+  text-align: center !important;
+}
+.team_main img {
+  width: 100%;
+}
+/* 404-Error Css Start from Here */
+.error_banner {
+  background-image: url(./images/errorpage.jpg);
+  width: 100%;
+  height: 50vh;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.error_text {
+  padding: 140px 0;
+  text-align: center;
+}
+.error_text h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.error_text ul li {
+  display: inline;
+}
+.error_text ul li a {
+  line-height: 1;
+  font-size: 19px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.error_text ul li a:hover {
+  text-decoration: none;
+  color: #0172d0;
+}
+.error_text ul li:first-child::after {
+  content: "/";
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 0 10px;
+  color: #fff !important;
+  font-weight: 400;
+  text-decoration: none;
+}
+.error_last_child {
+  line-height: 1;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.error_text_main {
+  padding: 95px 0;
+  text-align: center;
+}
+.error_text_main h1 {
+  font-size: 170px;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  line-height: 1;
+  margin-top: -44px;
+  color: #0172d0;
+}
+.error_text_main h2 {
+  font-size: 25px;
+  padding: 10px 0;
+}
+.error_text_main p {
+  padding-bottom: 30px;
+  color: #151515;
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 400;
+}
+.error_text_main form input {
+  border: 1px solid #e1e1e1;
+  height: 45px;
+  width: 50%;
+  padding-left: 15px;
+}
+.error_text_main button {
+  border: none;
+  background-color: #0172d0;
+  height: 46px;
+  overflow: hidden;
+  outline: none;
+  width: 70px;
+  color: #fff;
+  cursor: pointer;
+}
+@media only screen and (max-width: 769px) {
+  .error_text_main form input {
+    width: 100%;
+  }
+  .ser_body p {
+    padding-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .ser {
+    padding-right: 0 !important;
+  }
+  .title {
+    padding-left: 0 !important;
+  }
+  .solution {
+    padding: 0 !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Contact Css Start From Here */
+.form_text h2 {
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: -9px;
+  padding-bottom: 35px;
+  margin-left: 10px;
+  font-size: 36px;
+}
+.form_text {
+  width: 100%;
+}
+.form_text input,
+textarea {
+  width: 100%;
+  border: 0;
+  font-size: 14px;
+  background: #e9ecef;
+  padding: 10px 20px;
+}
+.form_text input:focus,
+textarea:focus {
+  border: 0px;
+  outline: 0px;
+}
+.form_text textarea {
+  min-height: 130px;
+}
+textarea {
+  resize: vertical;
+}
+.contact_information {
+  /* height: 100%; */
+  padding-left: 30px;
+}
+.contact_information p {
+  padding-bottom: 30px;
+  color: #151515;
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 400;
+}
+.contact_information h2 {
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: -9px;
+  padding-bottom: 35px;
+  margin-left: 10px;
+  font-size: 36px;
+}
+.contact_information ul li {
+  margin-top: -10px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  font-size: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
 }
-
-.App-link {
-  color: #61dafb;
+.contact_information ul li span {
+  font-size: 18px;
+  padding-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer Css Start From Here */
+.for_footer_bg {
+  background-color: #e9ecef;
+}
+.footer_logo_under p {
+  padding-bottom: 15px !important;
+  margin-top: 20px;
+  padding-right: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  visibility: visible;
+  color: #000;
+}
+.icons a {
+  font-size: 16px;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #e9ecef;
+  border: 1px solid #212121;
+  color: #212121;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.icons a:hover {
+  background: #122179;
+  color: #fff;
+}
+.serv_heading h4 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #212121;
+  line-height: 1;
+  font-weight: 700;
+}
+.serv_heading h4::before {
+  content: "";
+  background: #212121;
+  color: #212121;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 1px;
+  position: absolute;
+}
+.serv_heading h4::after {
+  content: "";
+  color: #122179;
+  background: #122179;
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.undlist ul li {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.undlist ul li a::before {
+  content: "\00BB";
+  margin-right: 10px;
+  color: #000;
+}
+.undlist ul li a {
+  color: #212121 !important;
+  font-weight: 600;
+}
+.undlist ul li a:hover {
+  color: #122179 !important;
+  text-decoration: none !important;
+}
+.for_mail p {
+  color: #212121 !important;
+  font-weight: 600;
+  font-size: 15px;
+}
+.for_email_box {
+  width: 100%;
+}
+.for_email_box input {
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  border: 0px;
+  font-size: 14px;
+  background-color: #bababa;
+  -webkit-transform: 0.3s;
+  -ms-transform: 0.3s;
+  padding: 4px;
+  transform: 0.3s;
+}
+.for_email_box input:focus {
+  border: 0px;
+  outline: 0px;
 }

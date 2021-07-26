@@ -73,6 +73,9 @@ body {
   position: relative;
   top: 20%;
 }
+.for_home_img img{
+  max-width: 100%;
+}
 .for_home_img img {
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
